@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap");
+@import url("http://fonts.cdnfonts.com/css/aquire");
+@font-face {
+  font-family: "Font1";
+  src: url("../styles/font1.ttf");
+}
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+
+  h2 {
+    font-family: "Aquire", sans-serif;
+    letter-spacing: 12.4px;
+    margin-left: 20px;
+    cursor: none;
+  }
+  div {
+    width: max-content;
+    min-width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 20px;
+    button {
+      align-self: flex-start;
+      font-size: 1.2rem;
+      width: 30%;
+      height: 2rem;
+      border-radius: 5px;
+      background-color: transparent;
+      border: 0.5px solid transparent;
+      transition: all 0.3s ease-in-out;
+      margin-top: 15px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: var(--secondary-color);
+        color: #000;
+        border: 0.5px solid transparent;
+
+        transform: scale(1.1);
+      }
+
+      &:active {
+        transform: scale(0.5);
+      }
+    }
+    h3 {
+      font-family: "Font1";
+      letter-spacing: 3.4px;
+      font-size: 1.2rem;
+      border-bottom: 1px solid transparent;
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: -8px;
+      margin-right: 10px;
+
+      &:hover {
+        cursor: pointer;
+        color: var(--secondary-color);
+        transition: border 0.5s linear;
+        border-bottom: 1px solid #fff;
+      }
+      &:active {
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    h2 {
+      font-size: 1.5rem;
+      margin-left: 10px;
+    }
+    div {
+      width: 50%;
+      button {
+        font-size: 0.8rem;
+        height: 2rem;
+        width: 80%;
+      }
+      h3 {
+        font-size: 0.7rem;
+        letter-spacing: 0px;
+        margin-right: 6px;
+      }
+    }
+  }
+}
